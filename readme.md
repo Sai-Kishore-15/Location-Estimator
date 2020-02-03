@@ -47,7 +47,8 @@ Note:
 [Watch CameraCaliberate.py Video](https://www.dropbox.com/s/0jr54pl13oxz65q/VID-20200203-WA0002.mp4?dl=0)
 
 In the video ,  my focal length is 881.6 .
-I ran this a couple of times and took the average value as focal length which is 945.05
+I ran this a couple of times and took the average value as focal length which is 925.4287152275735
+
 
 
 ### Main Program
