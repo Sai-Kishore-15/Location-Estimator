@@ -63,24 +63,25 @@ I ran this a couple of times and took the average value as focal length which is
 4. Report.pdf will help you understand the methods, Datastructures used.
 
 ## RoadBlocks Faced / Experiments
-###GENDER CLASSIFICATION:
+### GENDER CLASSIFICATION:
 
 1. Initially, Haar Cascade Classifiers were used for facial recognition.
     - ResNet model was used and "weights.hdf5" were obtained.
 
 Approach :
-    1. Initial Approach was to use any one of
-        cv2.TrackerBoosting_create()
-        cv2.TrackerMIL_create()
-        cv2.TrackerKCF_create()
-        cv2.TrackerTLD_create()
-        cv2.TrackerMedianFlow_create()
-        cv2.TrackerGOTURN_create()
-        cv2.TrackerMOSSE_create()
-        cv2.TrackerCSRT_create()
-    2. Frame rate of my computer is 14 frames per second and hence, a Tracker was used to Track the Boxes Obtained from the classifiers.
-    3. Every 14th frame was sent to Gender Classifiers and the Trackers were updated.
-    4. The speed of the program slowed down very much and there was a huge lag.
+1. Initial Approach was to use any one of
+    - cv2.TrackerBoosting_create()
+    - cv2.TrackerMIL_create()
+    - cv2.TrackerKCF_create()
+    - cv2.TrackerTLD_create()
+    - cv2.TrackerMedianFlow_create()
+    - cv2.TrackerGOTURN_create()
+    - cv2.TrackerMOSSE_create()
+    - cv2.TrackerCSRT_create()
+
+2. Frame rate of my computer is 14 frames per second and hence, a Tracker was used to Track the Boxes Obtained from the classifiers.
+3. Every 14th frame was sent to Gender Classifiers and the Trackers were updated.
+4. The speed of the program slowed down very much and there was a huge lag.
 
 A Gif from the Gender Classification Portion
 <a href="https://imgflip.com/gif/3o11j0"><img src="https://i.imgflip.com/3o11j0.gif" title="made at imgflip.com"/></a>
@@ -99,18 +100,18 @@ A Gif from the Centroid Tracking Portion
 
 ## LIMITATIONS AND ASSUMPTIONS
 Assumption:
-    - The Camera is always against one wall
-    - The Camera is always perpendicular to the working space.
-    - The Height does not matter as long as it can Track the Aruco Markers.
+1. The Camera is always against one wall
+2. The Camera is always perpendicular to the working space.
+3. The Height does not matter as long as it can Track the Aruco Markers.
 
 Limitation:
-    - Lighting conditions may affect the detection of aruco Markers.
-    - Without Aruco Markers, the progrom will not function
-    - Two Arucomarkers of the same ID will result in an error and the program will malfunction
-    - Too many Objects in the room can result in erraneous output
-    - Tested with minimal number of ArucoMarkers.
+1. Lighting conditions may affect the detection of aruco Markers.
+2. Without Aruco Markers, the progrom will not function
+3. Two Arucomarkers of the same ID will result in an error and the program will malfunction
+4. Too many Objects in the room can result in erraneous output
+5. Tested with minimal number of ArucoMarkers.
 
 System Details:
-    - Tested on MacBook 2011
-    - 8 GB Ram
-    - MacOS Sierra
+1. Tested on MacBook 2011
+2. 8 GB Ram
+3. MacOS Sierra
