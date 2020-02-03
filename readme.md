@@ -55,11 +55,11 @@ I ran this a couple of times and took the average value as focal length which is
 
 1. Test Case 1:
     - Camera at the middle of the wall
-    -[Width = 10 ft , Depth = 10ft , Camera at 5ft] (https://www.dropbox.com/s/9jieoglyn7ggjme/10_10_5.mov?dl=0)
+    - [Width = 10 ft , Depth = 10ft , Camera at 5ft] (https://www.dropbox.com/s/9jieoglyn7ggjme/10_10_5.mov?dl=0)
 
 2. Test Case 2:
-    -Camera near a corner of a room
-    -[Width = 10 ft , Depth = 10ft , Camera at 2ft] (https://www.dropbox.com/s/z04tem6myu7fghq/10_10_2.mov?dl=0)
+    - Camera near a corner of a room
+    - [Width = 10 ft , Depth = 10ft , Camera at 2ft] (https://www.dropbox.com/s/z04tem6myu7fghq/10_10_2.mov?dl=0)
 3. Docstrings are provided in the code.
 4. Report.pdf will help you understand the methods, Datastructures used.
 
