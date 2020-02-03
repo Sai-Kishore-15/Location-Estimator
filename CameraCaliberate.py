@@ -20,16 +20,18 @@ New Depth = (Dist_real * Focal)/ Dist_pix
 
 -------------------------------------------------------------
 Now To Caliberate the X axis.
-1) We know the opposite Wall's length.
-2) We know the pixel length of the wall.
+Camera has 1280 pixels in my case. (i.e) 640 in the left and 640 in the right.
 
-Assuming that the camera angle and orientation does not change.
-WallPix = number of pixels from one edge of the wall to other.
-WallDist = The World distanace ( cm or inches or foot)
+Depending upon the Camera position, The pixels are mapped to real_world units
+For Example:
+if Camera is placed at 2 ft and the wall's length is 10 ft.
 
-Note: WallDist must be same as Dist_real used to compute Depth
-Calib_Ratio = (WallDist / WallPix)
-World_X = (Current_Xpixel_value) * Calib Ratio.
+The first 61 pixels ( 2 ft is 61 cms) is mapped to the first 640 pixels of the camera
+The rest 305-61 pixels(10ft - 2ft ) is mapped to the other 640 pixels
+
+Assuming that the Camera angle is perpendicular and the camera's Y axis is 0,
+We Caliberate the X pixels to that of cms in the Screen
+
 '''
 import cv2
 import numpy as np

@@ -61,6 +61,7 @@ X_mod = 2 - Offset
 X_mod = Foot_to_cms(X_mod)
 mod = (Adder // 2)
 
+# This Dictionary stores " ID's : Object(ID) "
 Obj_Dict = {}
 
 while True:
