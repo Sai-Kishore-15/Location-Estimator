@@ -44,7 +44,7 @@ pip install -r requirements.txt
 Note:
     - This test case has ArucoWidth = 9.1 , ArucoDist = 100cms , frame.shape = (720,1280,3).
 
-[Watch CameraCaliberate.py Video](https://www.dropbox.com/s/0jr54pl13oxz65q/VID-20200203-WA0002.mp4?dl=0)
+[Watch CameraCaliberate.py Video](https://www.dropbox.com/s/duhemyy5vbyk23y/VID_20200204_232217.mp4?dl=0)
 
 In the video ,  my focal length is 881.6 .
 I ran this a couple of times and took the average value as focal length which is 925.4287152275735
